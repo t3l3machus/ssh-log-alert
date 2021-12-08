@@ -23,7 +23,7 @@ There are two ways to use this script:
 2. Add script to the root crontab and have it run in the background when the machine starts:  
 `crontab -e`  
 then add line:  
-`@reboot /bin/bash /path/to/ssh-log-alert/ssh-log-alert.sh`
+`@reboot /bin/bash /path/to/ssh-log-alert/ssh-log-alert.sh`  
 reboot the machine and you are good to go (`reboot now`).
 
 ## About Mailgun
@@ -31,5 +31,6 @@ If you have never used it:
 1. You need to have a domain (you can purchase one from multiple services such as https://www.namecheap.com/).
 2. Create mailgun account and upgrade it (you need to add payment data but the service is free of charge).
 2. After you upgrade, you'll need to update your DNS records according to the instructions provided by mailgun.
+
 You could ofcourse edit the script and replace Mailgun with another SMTP service.
 
