@@ -20,10 +20,9 @@ Fail2ban is dope and SSH is quite secure, but what if someone still manages to a
 There are two ways to use this script:
 1. Simply run the script (as root) which will result in a live log of every succesfull ssh authentication as well as an indication of email alert trigger success/failure, when a condition is met (you should test it that way also).
 `./ssh-log-alert.sh`
-2. Add script to the root crontab and have it run in the background when the machine starts:
-
-`crontab -e`
-then add line:
+2. Add script to the root crontab and have it run in the background when the machine starts:  
+`crontab -e`  
+then add line:  
 `@reboot /bin/bash /path/to/ssh-log-alert/ssh-log-alert.sh`
 reboot the machine and you are good to go (`reboot now`).
 
