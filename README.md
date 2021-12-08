@@ -16,6 +16,7 @@ Fail2ban is dope and SSH is quite secure, but what if someone still manages to a
 
 ## Usage
 `sudo chmod +x ssh-log-alert.sh`  
+
 There are two ways to use this script:
 1. Simply run the script (as root) which will result in a live log of every succesfull ssh authentication as well as an indication of email alert trigger success/failure, when a condition is met (you should test it that way also).  
 `./ssh-log-alert.sh`
