@@ -1,6 +1,8 @@
 ## Scope
 Fail2ban is dope and SSH is quite secure, but what if someone still manages to authenticate to your machine e.g. by using saved/harvested credentials? Receive email alerts on successful ssh logins based on a predefined IP whitelist OR a predefined IP country origin whitelist.  
-**Essentially:** IF (ssh successful authentication ip address NOT IN ip whitelist) OR (ssh successful authentication ip address country of origin NOT IN country whitelist); then send email notification;
+**Essentially:** IF (ssh successful authentication ip address NOT IN ip whitelist) OR (ssh successful authentication ip address country of origin NOT IN country whitelist); then send email notification;  
+  
+For a simpler version that requires only a gmail account see [gmail-ssh-log-alert](https://github.com/t3l3machus/gmail-ssh-log-alert).
 
 ## Notification
 ![Notification example.png](https://i.ibb.co/550xtBv/logalert.png)
@@ -31,5 +33,3 @@ If you have never used it:
 1. You need to have a domain (you can purchase one from multiple services such as https://www.namecheap.com/).
 2. Create a [mailgun](https://www.mailgun.com) account and upgrade it (you need to add payment data but the service is free of charge).
 2. After you upgrade, you'll need to update your DNS records according to the instructions provided by mailgun.
-
-You could ofcourse edit the script and replace Mailgun with another SMTP service.
