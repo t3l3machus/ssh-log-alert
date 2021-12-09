@@ -10,8 +10,8 @@ Fail2ban is dope and SSH is quite secure, but what if someone still manages to a
 3. A [mailgun](https://www.mailgun.com) account.
 
 ## Configuration
-1. Edit variables $country_whitelist OR $ip_whitelist in ssh-log-alert.sh to your needs.
-2. Edit the script and replace your mailgun API, domain name, from-address and to-address in function mailgun_send_alert().
+1. Edit variables `country_whitelist` OR `ip_whitelist` in ssh-log-alert.sh to your needs.
+2. Edit the script and replace your mailgun API, domain name, from-address and to-address in function `mailgun_send_alert()`.
 
 
 ## Usage
