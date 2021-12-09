@@ -14,7 +14,6 @@ Fail2ban is dope and SSH is quite secure, but what if someone still manages to a
 1. Edit variables `country_whitelist` OR `ip_whitelist` in ssh-log-alert.sh to your needs.
 2. Edit the script and replace your mailgun API, domain name, from-address and to-address in function `mailgun_send_alert()`.
 
-
 ## Usage
 `sudo chmod +x ssh-log-alert.sh`  
 
@@ -34,4 +33,3 @@ If you have never used it:
 2. After you upgrade, you'll need to update your DNS records according to the instructions provided by mailgun.
 
 You could ofcourse edit the script and replace Mailgun with another SMTP service.
-
