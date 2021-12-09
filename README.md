@@ -7,7 +7,7 @@ Fail2ban is dope and SSH is quite secure, but what if someone still manages to a
 ## Requirements
 1. `sudo apt install geoip-bin`
 2. A domain name.
-3. A mailgun account (https://www.mailgun.com/).
+3. A [mailgun](https://www.mailgun.com) account.
 
 ## Configuration
 1. Edit variables $country_whitelist OR $ip_whitelist in ssh-log-alert.sh to your needs.
@@ -29,7 +29,7 @@ reboot the machine and you are good to go (`reboot now`).
 ## About Mailgun
 If you have never used it:
 1. You need to have a domain (you can purchase one from multiple services such as https://www.namecheap.com/).
-2. Create mailgun account and upgrade it (you need to add payment data but the service is free of charge).
+2. Create a [mailgun](https://www.mailgun.com) account and upgrade it (you need to add payment data but the service is free of charge).
 2. After you upgrade, you'll need to update your DNS records according to the instructions provided by mailgun.
 
 You could ofcourse edit the script and replace Mailgun with another SMTP service.
