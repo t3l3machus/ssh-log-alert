@@ -64,7 +64,7 @@ do
             echo $ip_whitelist | grep -w -q $ip
         fi
 
-        #Send notification if matching codition
+        #Send notification if matching condition
         if (($?)); then
             server_ip=$(curl ident.me -s) #You could change this to the machine's internal ip if the sshd is not publicly accessible
             mailgun_send_alert $(hostname) "$server_ip" "$country" "$log_entry"
