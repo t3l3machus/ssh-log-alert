@@ -38,6 +38,7 @@ mailgun_send_alert () {
   fi
 }
 
+echo -e "\033[1m[*] SSH-LOG-ALERT is live\033[0m"
 
 tail -n 0 -f /var/log/auth.log |
 while read -r line
