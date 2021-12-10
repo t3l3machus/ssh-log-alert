@@ -2,7 +2,7 @@
 Fail2ban is dope and SSH is quite secure, but what if someone still manages to authenticate to your machine e.g. by using saved/harvested credentials? Receive email alerts on successful ssh logins based on a predefined IP whitelist OR a predefined IP country origin whitelist.  
 **Essentially:** IF (ssh successful authentication ip address NOT IN ip whitelist) OR (ssh successful authentication ip address country of origin NOT IN country whitelist); then send email notification;  
   
-For a simpler version that requires only a gmail account see [gmail-ssh-log-alert](https://github.com/t3l3machus/gmail-ssh-log-alert).
+**Note:** For a simpler version that requires only a gmail account see [gmail-ssh-log-alert](https://github.com/t3l3machus/gmail-ssh-log-alert).
 
 ## Notification
 ![Notification example.png](https://i.ibb.co/550xtBv/logalert.png)
